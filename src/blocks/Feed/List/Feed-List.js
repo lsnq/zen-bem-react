@@ -8,10 +8,13 @@ export default decl({
     block: 'feed',
     elem: 'list',
     grid: ['m', 'm'],
-    content({setSize}){
-        console.log(feedData);
+    content({feed}){
         let counter = 0;
-        return feedData.items.map((el, i) => 
+        if (!feed.items) {
+            return null;
+        };
+        
+        return feed.items.map((el, i) => 
             el.title ? 
                 <Card 
                     author={el.domain_title}
