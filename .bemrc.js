@@ -14,12 +14,24 @@ module.exports = {
       layer: 'touch',
       path: 'src/blocks.touch',
       scheme: 'nested'
+    },
+    {
+      layer: 'phone',
+      path: 'src/blocks.phone',
+      scheme: 'nested'
+    },
+    {
+      layer: 'tablet',
+      path: 'src/blocks.tablet',
+      scheme: 'nested'
     }
   ],
   // remove sets to build one universal bundle for index.html
   sets: {
     desktop: 'common desktop',
-    touch: 'common touch'
+    touch: 'common touch',
+    phone: 'common touch phone',
+    tablet: 'common touch tablet',
   },
   modules: {
     'bem-tools': {

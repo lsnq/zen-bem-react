@@ -1,0 +1,4 @@
+.feed-list {
+    grid-row-gap: 4em;
+    max-width: 400px; 
+}

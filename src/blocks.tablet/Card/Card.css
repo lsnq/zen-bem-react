@@ -1,0 +1,8 @@
+.card {
+    grid-template-areas: 
+        'heading' 
+        'image' 
+        'description' 
+        'author' 
+        'tools';
+}

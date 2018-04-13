@@ -1,8 +1,8 @@
 .button {
-    opacity: 0.25;
+    opacity: 0.5;
     width:24px;
     height: 24px;
-    transition: opacity 0.15s linear;
+    transition: opacity 0.1s linear;
 }
 
 .button:hover {

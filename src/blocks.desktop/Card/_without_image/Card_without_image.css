@@ -1,0 +1,15 @@
+.card_without_image {
+    grid-template-rows: auto minmax(120px, 1fr);
+    grid-template-areas: 
+        'heading heading' 
+        'description description' 
+        'author tools';
+}
+
+.card_without_image .card-tale {
+    max-height: none;
+}
+
+.card_without_image .card-tools {
+    flex-direction: row;
+}
