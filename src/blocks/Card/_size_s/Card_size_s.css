@@ -1,3 +1,12 @@
 .card_size_s {
     grid-column-end: span 2;
+    grid-template-areas:
+      'heading heading'
+      'image image'
+      'description description'
+      'author tools';
+}
+
+.card_size_s .card-thumbnail {
+    align-self: flex-end;
 }

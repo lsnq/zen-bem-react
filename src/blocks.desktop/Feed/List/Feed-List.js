@@ -8,8 +8,8 @@ export default decl({
         's', 's', 's', 
         'm', 'm',
         'xl',
-        's', 'l', 
+        'l', 's', 
         's', 's', 's',
-        'l', 's'
+        's', 'l',
     ]
 })

@@ -14,6 +14,7 @@ export default decl({
         return feedData.items.map((el, i) => 
             el.title ? 
                 <Card 
+                    author={el.domain_title}
                     key={i} 
                     link={el.link}
                     title={el.title} 

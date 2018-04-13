@@ -1,0 +1,8 @@
+.card-author {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-self: center;
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: 0.75em;
+}

@@ -4,7 +4,7 @@
         'heading heading' 
         'description description' 
         'author tools';
-    grid-template-columns: auto;
+    
 }
 
 .card_without_image .card-tale {

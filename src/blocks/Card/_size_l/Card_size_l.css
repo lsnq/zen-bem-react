@@ -3,10 +3,11 @@
     grid-template-areas:
       'heading heading'
       'image image'
-      'description tools';
+      'description tools'
+      'author tools';
     grid-template-columns: 2fr auto;
     grid-template-rows: 2.70em min-content auto;
-    font-size: 1em;
+    font-size: 1.15em;
 }
 
 .card_size_l .card-tools {

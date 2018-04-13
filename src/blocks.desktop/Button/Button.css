@@ -1,5 +1,7 @@
 .button {
     opacity: 0.25;
+    width:24px;
+    height: 24px;
     transition: opacity 0.15s linear;
 }
 

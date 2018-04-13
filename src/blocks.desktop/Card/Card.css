@@ -1,3 +1,12 @@
 .card {
-    grid-template-rows: 2.70em 12em;
+    grid-template-rows: 2.70em max-content 1fr;
+}
+
+.card .card-tools {
+    opacity: 0.25;
+    transition: opacity 0.15s linear;
+}
+
+.card:hover .card-tools {
+    opacity: 1;
 }
