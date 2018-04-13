@@ -1,0 +1,7 @@
+.card {
+    display: grid;
+    grid-row-gap: 1em;
+    grid-column-gap: 3vw;
+    grid-template-areas: 'heading' 'image' 'description' 'tools';
+    border-radius: 5px;
+}

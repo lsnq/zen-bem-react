@@ -1,0 +1,9 @@
+.button {
+    display: block;
+    width:20px;
+    height: 20px;
+    background: transparent no-repeat 50% 50%;
+    background-size: 100%;
+    border-radius: 5px;
+    cursor: pointer;  
+}

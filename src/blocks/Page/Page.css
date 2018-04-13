@@ -1,5 +1,13 @@
+@import './fonts/fonts.css';
+
 body {
+  font-family: 'YS Text', 'Helvetica', Arial, sans-serif;
+  font-size: calc(12px + 0.2vw);
+  min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
 }

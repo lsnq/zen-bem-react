@@ -1,0 +1,6 @@
+.card_without_description {
+    grid-template-rows: auto minmax(120px, 1fr);
+    grid-template-areas: 
+        'heading' 
+        'image';
+}

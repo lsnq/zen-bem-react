@@ -1,0 +1,14 @@
+.card-title {
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.35;
+    grid-area: heading;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.card-title span {
+    background: #fff;
+    display: block;
+    padding-bottom: .5em;
+}

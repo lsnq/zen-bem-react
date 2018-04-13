@@ -1,0 +1,10 @@
+.card_size_xl {
+    grid-column: 1/-1;
+    grid-template-areas:
+        'image heading'
+        'image description'
+        'image tools';
+    grid-template-columns: 2fr .95fr;
+    grid-template-rows: max-content min-content auto;
+    font-size: 1.3em;
+}

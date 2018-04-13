@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import 'b:Page';
-import App from 'b:App';
+import Feed from 'b:Feed';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Feed />, document.getElementById('root'));
 registerServiceWorker();

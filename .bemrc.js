@@ -7,12 +7,12 @@ module.exports = {
     },
     {
       layer: 'desktop',
-      path: 'src/desktop',
+      path: 'src/blocks.desktop',
       scheme: 'nested'
     },
     {
       layer: 'touch',
-      path: 'src/touch',
+      path: 'src/blocks.touch',
       scheme: 'nested'
     }
   ],

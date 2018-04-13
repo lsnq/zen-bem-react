@@ -1,0 +1,7 @@
+.card-tale {
+    line-height: 1.45;
+    grid-area: description;
+    max-height: 9.8em;
+    overflow: hidden;
+    text-overflow: clip;
+}

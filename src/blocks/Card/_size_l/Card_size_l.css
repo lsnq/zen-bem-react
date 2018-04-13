@@ -1,0 +1,15 @@
+.card_size_l {
+    grid-column: span 4;
+    grid-template-areas:
+      'heading heading'
+      'image image'
+      'description tools';
+    grid-template-columns: 2fr auto;
+    grid-template-rows: 2.70em min-content auto;
+    font-size: 1em;
+}
+
+.card_size_l .card-tools {
+    flex-direction: column;
+    align-self: auto;
+}

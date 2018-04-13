@@ -1,22 +1,16 @@
 import React, {Fragment} from 'react';
-import {decl} from 'bem-react-core';
 import Title from 'e:Title';
 import Thumbnail from 'e:Thumbnail';
-import Tale from 'e:Tale';
 import Tools from 'e:Tools';
+import { declMod } from 'bem-react-core';
 
-export default decl({
+export default declMod({without: 'description'}, {
     block: 'card',
-    mods({without}) {
-        return {without};
-    },
-    
-    content({title, tale, thumbnail, link}) {
+    content({title, thumbnail, link}) {
         return(
             <Fragment>
                 <Title link={link}>{title}</Title>
-                <Thumbnail url={thumbnail} title={title}/>
-                <Tale tale ={tale}/>
+                <Thumbnail url={thumbnail}>{title}</Thumbnail>
                 <Tools/>
             </Fragment>
         )
