@@ -2,7 +2,6 @@ import React from 'react';
 
 import {decl} from 'bem-react-core';
 import Card from 'b:Card m:size_xl m:size_l m:size_m m:size_s m:without_image m:without_description';
-import feedData from '../../../db/feed.json';
 
 export default decl({
     block: 'feed',
@@ -10,11 +9,10 @@ export default decl({
     grid: ['m', 'm'],
     content({feed}){
         let counter = 0;
-        if (!feed.items) {
+        if (!feed) {
             return null;
         };
-        
-        return feed.items.map((el, i) => 
+        return feed.map((el, i) => 
             el.title ? 
                 <Card 
                     author={el.domain_title}

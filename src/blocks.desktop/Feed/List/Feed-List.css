@@ -1,4 +1,5 @@
 .feed-list {
     grid-template-columns: repeat(6,1fr);
     padding: 0 4em;
+    grid-column-gap: 2em;
 }

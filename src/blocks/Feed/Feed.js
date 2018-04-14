@@ -13,18 +13,31 @@ export default decl({
   },
   willInit() {
     this.state = {
-      feed: {}
+      feed: [],
+      isLoading: false
+    };
+  },
+  _loadFeed() {
+    this.setState({isLoading: true}, () => {
+      client().then(data => {
+        this.setState({
+          feed: [...this.state.feed, ...data],
+          isLoading: false
+        })
+      });
+    });
+  },
+  _watchScroll(e) {
+    /** высота контента              текущая позиция Y  высота экрана            загрузка контента не выполняется*/
+    if (document.body.offsetHeight  - window.scrollY < window.innerHeight * 2 && !this.state.isLoading) {
+      this._loadFeed();
     }
   },
   willMount() {
-    client().then(data => {
-      this.setState({
-        feed: data
-      })
-    })
+    this._loadFeed();
+    document.addEventListener('scroll', (e) => this._watchScroll(e))
   },
   content() {
-    console.log(this.state);
     return (
       <Fragment>
         <Header />
