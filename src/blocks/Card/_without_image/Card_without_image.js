@@ -2,8 +2,8 @@ import React, {Fragment} from 'react';
 import Title from 'e:Title';
 import Tale from 'e:Tale';
 import Tools from 'e:Tools';
-import { declMod } from 'bem-react-core';
-import Author from 'e:Author';
+import { declMod, Bem } from 'bem-react-core';
+import 'e:Author';
 
 export default declMod({without: 'image'}, {
     block: 'card',
@@ -12,7 +12,7 @@ export default declMod({without: 'image'}, {
             <Fragment>
                 <Title link={link}>{title}</Title>
                 <Tale tale={tale} words={50} />
-                <Author>{author}</Author>
+                <Bem elem="author">{author}</Bem>
                 <Tools />
             </Fragment>
         )

@@ -35,7 +35,7 @@ export default decl({
   },
   willMount() {
     this._loadFeed();
-    document.addEventListener('scroll', (e) => this._watchScroll(e))
+    document.addEventListener('scroll', e => this._watchScroll(e));
   },
   content() {
     return (
