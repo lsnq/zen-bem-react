@@ -8,20 +8,22 @@ export default decl({
     elem: 'list',
     grid: ['m', 'm'],
     content({feed}){
-        let counter = 0;
         if (!feed) {
             return null;
         };
-        return feed.map((el, i) => 
-            el.title ? 
-                <Card 
+
+        let counter = 0;
+
+        return feed.map((el, i) =>
+            el.title ?
+                <Card
                     author={el.domain_title}
-                    key={i} 
+                    key={i}
                     link={el.link}
-                    title={el.title} 
-                    tale={el.text} 
-                    without={(!el.text && 'description') || (!el.image && 'image')} 
-                    thumbnail={el.image} 
+                    title={el.title}
+                    tale={el.text}
+                    without={(!el.text && 'description') || (!el.image && 'image')}
+                    thumbnail={el.image}
                     mainColor={el.main_color}
                     size={this.grid[counter++%this.grid.length]}
                 /> : null
